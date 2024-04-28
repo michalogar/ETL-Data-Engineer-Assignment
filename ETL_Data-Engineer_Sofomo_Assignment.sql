@@ -13,9 +13,9 @@ combined_tables AS (
 		A.measure_1 AS measure_1,
 		0 AS measure_2
 	FROM
-        Table_A A
-    LEFT JOIN
-        distinct_Table_MAP M ON A.dimension_1 = M.dimension_1
+        	Table_A A
+    	LEFT JOIN
+        	distinct_Table_MAP M ON A.dimension_1 = M.dimension_1
 
 UNION
 
@@ -25,9 +25,9 @@ UNION
 		0 AS measure_1,
 		B.measure_2 AS measure_2
 	FROM
-        Table_B B
-    LEFT JOIN
-        distinct_Table_MAP M ON B.dimension_1 = M.dimension_1
+        	Table_B B
+    	LEFT JOIN
+        	distinct_Table_MAP M ON B.dimension_1 = M.dimension_1
 )
 --Sum measure 1 and 2
 SELECT
